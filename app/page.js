@@ -7,6 +7,11 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 
+export const metadata = {
+  title: "Sourav's_Portfolio",
+  
+};
+
 export default function Home() {
   return (
     <div>

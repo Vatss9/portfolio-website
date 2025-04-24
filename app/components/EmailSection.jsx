@@ -37,7 +37,7 @@ const EmailSection = () => {
 
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div> 
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
         <p className="text-[#ABB7BE] mb-4 max-w-md">
@@ -47,10 +47,13 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/Vatss9" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link
+            href="https://www.linkedin.com/in/vats-kumar-sourav-593a47227/"
+            target="_blank"
+          >
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -65,7 +68,7 @@ const EmailSection = () => {
               Your Email
             </label>
             <input
-            name="email"
+              name="email"
               type="text"
               id="subject"
               required
@@ -81,10 +84,9 @@ const EmailSection = () => {
               Subject
             </label>
             <input
-            name="subject"
+              name="subject"
               type="text"
               id="message"
-              
               placeholder="Just saying Hi"
               className="bg-[black] border border-[#33353F] placeholder-[#9CA2A9] text-white text-sm rounded-lg block w-full p-2.5"
             />
@@ -109,13 +111,11 @@ const EmailSection = () => {
           >
             Send Message
           </button>
-          {
-            emailSubmitted &&(
-              <p className="text-green-500 text-sm mt-2">
-                Email sent successfully!
-              </p>
-            )
-          }
+          {emailSubmitted && (
+            <p className="text-green-500 text-sm mt-2">
+              Email sent successfully!
+            </p>
+          )}
         </form>
       </div>
     </section>

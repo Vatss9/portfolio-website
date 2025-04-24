@@ -12,9 +12,6 @@ const TAB_DATA = [
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
-        <li>Javascript</li>
-        <li>Javascript</li>
-        <li>Javascript</li>
         <li>React</li>
       </ul>
     ),
@@ -30,17 +27,17 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Frontend Development</li>
-        <li>Frontend Development</li>
-        <li>Frontend Development</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Certifications",
+  //   id: "certifications",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>Frontend Development</li>
+  //       <li>Frontend Development</li>
+  //       <li>Frontend Development</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -66,28 +63,28 @@ const AboutSection = () => {
             player and excited to work with others to create amazing
             applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 gap-x-18">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
+              selectTab={() => handleTabChange("kills")}
               active={tab === "skills"}
             >
               {" "}
-              skills{" "}
+              Skills{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              education{" "}
+              Education{" "}
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
               certifications{" "}
-            </TabButton>
+            </TabButton> */}
            
           </div>
           <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>

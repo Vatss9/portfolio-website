@@ -42,13 +42,13 @@ const HeroSection = () => {
           </p>
           <div>
             <Link
-              href="/#contact"
+              href="mailto:sourav999.sm@gmail.com"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-purple-500 to-pink-500 hover:bg-slate-200 text-white"
             >
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="https://drive.google.com/uc?export=download&id=1fl4Jn3ZL3pQ-JHl5n4lKI3M-Xjk4y6qO"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
